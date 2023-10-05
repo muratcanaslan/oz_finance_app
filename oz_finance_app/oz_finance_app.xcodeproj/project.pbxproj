@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		29282E0A2ACECA2400D62C5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E092ACECA2400D62C5B /* AppDelegate.swift */; };
-		29282E0E2ACECA2400D62C5B /* CryptoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E0D2ACECA2400D62C5B /* CryptoListViewController.swift */; };
 		29282E132ACECA2500D62C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29282E122ACECA2500D62C5B /* Assets.xcassets */; };
 		29282E162ACECA2500D62C5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29282E142ACECA2500D62C5B /* LaunchScreen.storyboard */; };
 		29282E212ACECA2500D62C5B /* oz_finance_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E202ACECA2500D62C5B /* oz_finance_appTests.swift */; };
 		29282E2B2ACECA2500D62C5B /* oz_finance_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E2A2ACECA2500D62C5B /* oz_finance_appUITests.swift */; };
 		29282E2D2ACECA2500D62C5B /* oz_finance_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E2C2ACECA2500D62C5B /* oz_finance_appUITestsLaunchTests.swift */; };
+		29282E442ACECBF500D62C5B /* CryptoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E422ACECBF500D62C5B /* CryptoListViewController.swift */; };
+		29282E452ACECBF500D62C5B /* CryptoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29282E432ACECBF500D62C5B /* CryptoListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		29282E062ACECA2400D62C5B /* oz_finance_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oz_finance_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29282E092ACECA2400D62C5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29282E0D2ACECA2400D62C5B /* CryptoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewController.swift; sourceTree = "<group>"; };
 		29282E122ACECA2500D62C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29282E152ACECA2500D62C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29282E172ACECA2500D62C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +45,8 @@
 		29282E262ACECA2500D62C5B /* oz_finance_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oz_finance_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29282E2A2ACECA2500D62C5B /* oz_finance_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oz_finance_appUITests.swift; sourceTree = "<group>"; };
 		29282E2C2ACECA2500D62C5B /* oz_finance_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oz_finance_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		29282E422ACECBF500D62C5B /* CryptoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewController.swift; sourceTree = "<group>"; };
+		29282E432ACECBF500D62C5B /* CryptoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,6 @@
 				29282E3B2ACECA5700D62C5B /* Core */,
 				29282E3A2ACECA5300D62C5B /* UI Components */,
 				29282E392ACECA4E00D62C5B /* Screens */,
-				29282E0D2ACECA2400D62C5B /* CryptoListViewController.swift */,
 			);
 			path = oz_finance_app;
 			sourceTree = "<group>";
@@ -128,6 +129,7 @@
 		29282E392ACECA4E00D62C5B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				29282E412ACECBD200D62C5B /* CryptoList */,
 				29282E402ACECA9200D62C5B /* Launch */,
 			);
 			path = Screens;
@@ -183,6 +185,15 @@
 				29282E142ACECA2500D62C5B /* LaunchScreen.storyboard */,
 			);
 			path = Launch;
+			sourceTree = "<group>";
+		};
+		29282E412ACECBD200D62C5B /* CryptoList */ = {
+			isa = PBXGroup;
+			children = (
+				29282E422ACECBF500D62C5B /* CryptoListViewController.swift */,
+				29282E432ACECBF500D62C5B /* CryptoListViewController.xib */,
+			);
+			path = CryptoList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +302,7 @@
 			files = (
 				29282E162ACECA2500D62C5B /* LaunchScreen.storyboard in Resources */,
 				29282E132ACECA2500D62C5B /* Assets.xcassets in Resources */,
+				29282E452ACECBF500D62C5B /* CryptoListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +327,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29282E0E2ACECA2400D62C5B /* CryptoListViewController.swift in Sources */,
 				29282E0A2ACECA2400D62C5B /* AppDelegate.swift in Sources */,
+				29282E442ACECBF500D62C5B /* CryptoListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

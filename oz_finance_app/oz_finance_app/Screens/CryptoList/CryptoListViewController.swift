@@ -7,12 +7,10 @@
 
 import UIKit
 
-final class CryptoListViewController: UIViewController {
+class CryptoListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .red
+
     }
 }
-
