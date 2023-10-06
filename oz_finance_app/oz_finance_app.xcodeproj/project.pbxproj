@@ -22,6 +22,14 @@
 		29282E502ACEF5D300D62C5B /* CoinResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E4F2ACEF5D300D62C5B /* CoinResponseModel.swift */; };
 		29282E542ACEF7AC00D62C5B /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E532ACEF7AC00D62C5B /* ServiceManager.swift */; };
 		29282E562ACEFA3800D62C5B /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E552ACEFA3800D62C5B /* Services.swift */; };
+		29282E5A2AD0AA2E00D62C5B /* CryptoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E582AD0AA2E00D62C5B /* CryptoTableCell.swift */; };
+		29282E5B2AD0AA2E00D62C5B /* CryptoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29282E592AD0AA2E00D62C5B /* CryptoTableCell.xib */; };
+		29282E602AD0ACC400D62C5B /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E5F2AD0ACC400D62C5B /* UIImageView+Ext.swift */; };
+		29282E642AD0AFA600D62C5B /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E632AD0AFA600D62C5B /* UITableView+Ext.swift */; };
+		29282E6F2AD0C4C900D62C5B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 29282E6E2AD0C4C900D62C5B /* SDWebImage */; };
+		29282E722AD0C68E00D62C5B /* SDWebImageSVGCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 29282E712AD0C68E00D62C5B /* SDWebImageSVGCoder */; };
+		29282E752AD0C7F500D62C5B /* ImageSVGDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E742AD0C7F500D62C5B /* ImageSVGDecoder.swift */; };
+		29282E772AD0D1F700D62C5B /* CryptoTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E762AD0D1F700D62C5B /* CryptoTableCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +69,12 @@
 		29282E4F2ACEF5D300D62C5B /* CoinResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinResponseModel.swift; sourceTree = "<group>"; };
 		29282E532ACEF7AC00D62C5B /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		29282E552ACEFA3800D62C5B /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		29282E582AD0AA2E00D62C5B /* CryptoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableCell.swift; sourceTree = "<group>"; };
+		29282E592AD0AA2E00D62C5B /* CryptoTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoTableCell.xib; sourceTree = "<group>"; };
+		29282E5F2AD0ACC400D62C5B /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		29282E632AD0AFA600D62C5B /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		29282E742AD0C7F500D62C5B /* ImageSVGDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSVGDecoder.swift; sourceTree = "<group>"; };
+		29282E762AD0D1F700D62C5B /* CryptoTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29282E6F2AD0C4C900D62C5B /* SDWebImage in Frameworks */,
+				29282E722AD0C68E00D62C5B /* SDWebImageSVGCoder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				29282E172ACECA2500D62C5B /* Info.plist */,
+				29282E732AD0C7DC00D62C5B /* Helpers */,
 				29282E3F2ACECA7200D62C5B /* App */,
 				29282E3E2ACECA6800D62C5B /* Extensions */,
 				29282E3D2ACECA6400D62C5B /* Managers */,
@@ -152,6 +169,7 @@
 		29282E3A2ACECA5300D62C5B /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
+				29282E572AD0AA1200D62C5B /* Table Cells */,
 			);
 			path = "UI Components";
 			sourceTree = "<group>";
@@ -185,6 +203,8 @@
 		29282E3E2ACECA6800D62C5B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				29282E5F2AD0ACC400D62C5B /* UIImageView+Ext.swift */,
+				29282E632AD0AFA600D62C5B /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -233,6 +253,24 @@
 			path = Endpoints;
 			sourceTree = "<group>";
 		};
+		29282E572AD0AA1200D62C5B /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				29282E582AD0AA2E00D62C5B /* CryptoTableCell.swift */,
+				29282E592AD0AA2E00D62C5B /* CryptoTableCell.xib */,
+				29282E762AD0D1F700D62C5B /* CryptoTableCellViewModel.swift */,
+			);
+			path = "Table Cells";
+			sourceTree = "<group>";
+		};
+		29282E732AD0C7DC00D62C5B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				29282E742AD0C7F500D62C5B /* ImageSVGDecoder.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,6 +287,10 @@
 			dependencies = (
 			);
 			name = oz_finance_app;
+			packageProductDependencies = (
+				29282E6E2AD0C4C900D62C5B /* SDWebImage */,
+				29282E712AD0C68E00D62C5B /* SDWebImageSVGCoder */,
+			);
 			productName = oz_finance_app;
 			productReference = 29282E062ACECA2400D62C5B /* oz_finance_app.app */;
 			productType = "com.apple.product-type.application";
@@ -321,6 +363,10 @@
 				Base,
 			);
 			mainGroup = 29282DFD2ACECA2400D62C5B;
+			packageReferences = (
+				29282E6D2AD0C4C900D62C5B /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				29282E702AD0C68E00D62C5B /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */,
+			);
 			productRefGroup = 29282E072ACECA2400D62C5B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29282E162ACECA2500D62C5B /* LaunchScreen.storyboard in Resources */,
+				29282E5B2AD0AA2E00D62C5B /* CryptoTableCell.xib in Resources */,
 				29282E132ACECA2500D62C5B /* Assets.xcassets in Resources */,
 				29282E452ACECBF500D62C5B /* CryptoListViewController.xib in Resources */,
 			);
@@ -364,15 +411,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29282E602AD0ACC400D62C5B /* UIImageView+Ext.swift in Sources */,
 				29282E4E2ACEF5B500D62C5B /* Stats.swift in Sources */,
 				29282E492ACEF2CD00D62C5B /* EndpointProtocol.swift in Sources */,
 				29282E0A2ACECA2400D62C5B /* AppDelegate.swift in Sources */,
 				29282E4C2ACEF45700D62C5B /* Coin.swift in Sources */,
+				29282E752AD0C7F500D62C5B /* ImageSVGDecoder.swift in Sources */,
+				29282E772AD0D1F700D62C5B /* CryptoTableCellViewModel.swift in Sources */,
 				29282E542ACEF7AC00D62C5B /* ServiceManager.swift in Sources */,
 				29282E472ACEF00200D62C5B /* Endpoint.swift in Sources */,
 				29282E502ACEF5D300D62C5B /* CoinResponseModel.swift in Sources */,
 				29282E562ACEFA3800D62C5B /* Services.swift in Sources */,
+				29282E642AD0AFA600D62C5B /* UITableView+Ext.swift in Sources */,
 				29282E442ACECBF500D62C5B /* CryptoListViewController.swift in Sources */,
+				29282E5A2AD0AA2E00D62C5B /* CryptoTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -706,6 +758,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		29282E6D2AD0C4C900D62C5B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		29282E702AD0C68E00D62C5B /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSVGCoder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29282E6E2AD0C4C900D62C5B /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29282E6D2AD0C4C900D62C5B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		29282E712AD0C68E00D62C5B /* SDWebImageSVGCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29282E702AD0C68E00D62C5B /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */;
+			productName = SDWebImageSVGCoder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 29282DFE2ACECA2400D62C5B /* Project object */;
 }
