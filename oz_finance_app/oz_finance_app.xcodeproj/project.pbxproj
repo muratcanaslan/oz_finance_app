@@ -15,6 +15,13 @@
 		29282E2D2ACECA2500D62C5B /* oz_finance_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E2C2ACECA2500D62C5B /* oz_finance_appUITestsLaunchTests.swift */; };
 		29282E442ACECBF500D62C5B /* CryptoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E422ACECBF500D62C5B /* CryptoListViewController.swift */; };
 		29282E452ACECBF500D62C5B /* CryptoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29282E432ACECBF500D62C5B /* CryptoListViewController.xib */; };
+		29282E472ACEF00200D62C5B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E462ACEF00200D62C5B /* Endpoint.swift */; };
+		29282E492ACEF2CD00D62C5B /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E482ACEF2CD00D62C5B /* EndpointProtocol.swift */; };
+		29282E4C2ACEF45700D62C5B /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E4B2ACEF45700D62C5B /* Coin.swift */; };
+		29282E4E2ACEF5B500D62C5B /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E4D2ACEF5B500D62C5B /* Stats.swift */; };
+		29282E502ACEF5D300D62C5B /* CoinResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E4F2ACEF5D300D62C5B /* CoinResponseModel.swift */; };
+		29282E542ACEF7AC00D62C5B /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E532ACEF7AC00D62C5B /* ServiceManager.swift */; };
+		29282E562ACEFA3800D62C5B /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E552ACEFA3800D62C5B /* Services.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		29282E2C2ACECA2500D62C5B /* oz_finance_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oz_finance_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		29282E422ACECBF500D62C5B /* CryptoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewController.swift; sourceTree = "<group>"; };
 		29282E432ACECBF500D62C5B /* CryptoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoListViewController.xib; sourceTree = "<group>"; };
+		29282E462ACEF00200D62C5B /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		29282E482ACEF2CD00D62C5B /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		29282E4B2ACEF45700D62C5B /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		29282E4D2ACEF5B500D62C5B /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		29282E4F2ACEF5D300D62C5B /* CoinResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinResponseModel.swift; sourceTree = "<group>"; };
+		29282E532ACEF7AC00D62C5B /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		29282E552ACEFA3800D62C5B /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +159,10 @@
 		29282E3B2ACECA5700D62C5B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				29282E552ACEFA3800D62C5B /* Services.swift */,
+				29282E532ACEF7AC00D62C5B /* ServiceManager.swift */,
+				29282E512ACEF5E200D62C5B /* Endpoints */,
+				29282E4A2ACEF41D00D62C5B /* Models */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -194,6 +212,25 @@
 				29282E432ACECBF500D62C5B /* CryptoListViewController.xib */,
 			);
 			path = CryptoList;
+			sourceTree = "<group>";
+		};
+		29282E4A2ACEF41D00D62C5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				29282E4B2ACEF45700D62C5B /* Coin.swift */,
+				29282E4D2ACEF5B500D62C5B /* Stats.swift */,
+				29282E4F2ACEF5D300D62C5B /* CoinResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		29282E512ACEF5E200D62C5B /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				29282E462ACEF00200D62C5B /* Endpoint.swift */,
+				29282E482ACEF2CD00D62C5B /* EndpointProtocol.swift */,
+			);
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,7 +364,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29282E4E2ACEF5B500D62C5B /* Stats.swift in Sources */,
+				29282E492ACEF2CD00D62C5B /* EndpointProtocol.swift in Sources */,
 				29282E0A2ACECA2400D62C5B /* AppDelegate.swift in Sources */,
+				29282E4C2ACEF45700D62C5B /* Coin.swift in Sources */,
+				29282E542ACEF7AC00D62C5B /* ServiceManager.swift in Sources */,
+				29282E472ACEF00200D62C5B /* Endpoint.swift in Sources */,
+				29282E502ACEF5D300D62C5B /* CoinResponseModel.swift in Sources */,
+				29282E562ACEFA3800D62C5B /* Services.swift in Sources */,
 				29282E442ACECBF500D62C5B /* CryptoListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +548,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -531,6 +576,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

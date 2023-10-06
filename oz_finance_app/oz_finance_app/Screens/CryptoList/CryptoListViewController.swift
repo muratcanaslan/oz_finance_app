@@ -12,5 +12,13 @@ class CryptoListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        Services.getList { result in
+            switch result {
+            case .success(let success):
+                print(success)
+            case .failure(let failure):
+                print(failure)
+            }
+        }
     }
 }
