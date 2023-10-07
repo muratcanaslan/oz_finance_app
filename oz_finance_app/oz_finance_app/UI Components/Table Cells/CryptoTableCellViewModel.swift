@@ -43,6 +43,15 @@ struct CryptoTableCellViewModel {
         return Double(value)
     }
     
+    var highValue: String {
+        var doubleSparks: [Double] = (sparklines?.compactMap({ Double($0) }))!
+        return formattedValue(with: doubleSparks.max())
+    }
+    
+    var lowValue: String {
+        var doubleSparks: [Double] = (sparklines?.compactMap({ Double($0) }))!
+        return formattedValue(with: doubleSparks.min())
+    }
     var isLow: Bool? {
         if let changeValue {
             if let doubleValue = Double(changeValue) {

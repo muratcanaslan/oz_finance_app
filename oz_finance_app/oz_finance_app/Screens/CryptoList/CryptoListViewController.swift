@@ -88,7 +88,8 @@ extension CryptoListViewController: CryptoListInterface {
     }
     
     func routeDetail(with model: CryptoTableCellViewModel) {
-        // TODO: - Router Detail
+        let vc = CryptoDetailViewController(viewModel: .init(cellVM: model))
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func fetchList() {

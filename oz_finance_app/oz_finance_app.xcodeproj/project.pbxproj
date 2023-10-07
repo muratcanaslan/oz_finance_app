@@ -37,6 +37,13 @@
 		29282E852AD1658B00D62C5B /* CryptoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E842AD1658B00D62C5B /* CryptoListViewModel.swift */; };
 		29282E892AD17EDA00D62C5B /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E882AD17EDA00D62C5B /* UIViewController+Ext.swift */; };
 		29282E8B2AD1884900D62C5B /* CryptoSortType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E8A2AD1884900D62C5B /* CryptoSortType.swift */; };
+		29282E8F2AD19F8700D62C5B /* CryptoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E8D2AD19F8700D62C5B /* CryptoDetailViewController.swift */; };
+		29282E902AD19F8700D62C5B /* CryptoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29282E8E2AD19F8700D62C5B /* CryptoDetailViewController.xib */; };
+		29282E922AD19F9B00D62C5B /* CryptoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E912AD19F9B00D62C5B /* CryptoDetailViewModel.swift */; };
+		29282E962AD1A71400D62C5B /* NavigationItem+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E952AD1A71400D62C5B /* NavigationItem+Ext.swift */; };
+		29282E9A2AD1A8F600D62C5B /* CryptoDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E992AD1A8F600D62C5B /* CryptoDetailHeaderView.swift */; };
+		29282E9C2AD1A8FB00D62C5B /* CryptoDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29282E9B2AD1A8FB00D62C5B /* CryptoDetailHeaderView.xib */; };
+		29282E9E2AD1B08F00D62C5B /* NSMutableAttributedString+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E9D2AD1B08F00D62C5B /* NSMutableAttributedString+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +95,13 @@
 		29282E842AD1658B00D62C5B /* CryptoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewModel.swift; sourceTree = "<group>"; };
 		29282E882AD17EDA00D62C5B /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		29282E8A2AD1884900D62C5B /* CryptoSortType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoSortType.swift; sourceTree = "<group>"; };
+		29282E8D2AD19F8700D62C5B /* CryptoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailViewController.swift; sourceTree = "<group>"; };
+		29282E8E2AD19F8700D62C5B /* CryptoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoDetailViewController.xib; sourceTree = "<group>"; };
+		29282E912AD19F9B00D62C5B /* CryptoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailViewModel.swift; sourceTree = "<group>"; };
+		29282E952AD1A71400D62C5B /* NavigationItem+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationItem+Ext.swift"; sourceTree = "<group>"; };
+		29282E992AD1A8F600D62C5B /* CryptoDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailHeaderView.swift; sourceTree = "<group>"; };
+		29282E9B2AD1A8FB00D62C5B /* CryptoDetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoDetailHeaderView.xib; sourceTree = "<group>"; };
+		29282E9D2AD1B08F00D62C5B /* NSMutableAttributedString+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +188,7 @@
 		29282E392ACECA4E00D62C5B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				29282E8C2AD19F7200D62C5B /* CryptoDetail */,
 				29282E412ACECBD200D62C5B /* CryptoList */,
 				29282E402ACECA9200D62C5B /* Launch */,
 			);
@@ -222,6 +237,8 @@
 				29282E5F2AD0ACC400D62C5B /* UIImageView+Ext.swift */,
 				29282E632AD0AFA600D62C5B /* UITableView+Ext.swift */,
 				29282E882AD17EDA00D62C5B /* UIViewController+Ext.swift */,
+				29282E952AD1A71400D62C5B /* NavigationItem+Ext.swift */,
+				29282E9D2AD1B08F00D62C5B /* NSMutableAttributedString+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,10 +310,38 @@
 		29282E782AD1641900D62C5B /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				29282E982AD1A8DF00D62C5B /* CryptoDetailHeader */,
+				29282E972AD1A8D500D62C5B /* CryptoListHeader */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		29282E8C2AD19F7200D62C5B /* CryptoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				29282E8D2AD19F8700D62C5B /* CryptoDetailViewController.swift */,
+				29282E8E2AD19F8700D62C5B /* CryptoDetailViewController.xib */,
+				29282E912AD19F9B00D62C5B /* CryptoDetailViewModel.swift */,
+			);
+			path = CryptoDetail;
+			sourceTree = "<group>";
+		};
+		29282E972AD1A8D500D62C5B /* CryptoListHeader */ = {
+			isa = PBXGroup;
+			children = (
 				29282E792AD1642E00D62C5B /* CryptoListHeaderView.xib */,
 				29282E7B2AD1644200D62C5B /* CryptoListHeaderView.swift */,
 			);
-			path = "Custom Views";
+			path = CryptoListHeader;
+			sourceTree = "<group>";
+		};
+		29282E982AD1A8DF00D62C5B /* CryptoDetailHeader */ = {
+			isa = PBXGroup;
+			children = (
+				29282E992AD1A8F600D62C5B /* CryptoDetailHeaderView.swift */,
+				29282E9B2AD1A8FB00D62C5B /* CryptoDetailHeaderView.xib */,
+			);
+			path = CryptoDetailHeader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,8 +458,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29282E902AD19F8700D62C5B /* CryptoDetailViewController.xib in Resources */,
 				29282E7A2AD1642E00D62C5B /* CryptoListHeaderView.xib in Resources */,
 				29282E162ACECA2500D62C5B /* LaunchScreen.storyboard in Resources */,
+				29282E9C2AD1A8FB00D62C5B /* CryptoDetailHeaderView.xib in Resources */,
 				29282E5B2AD0AA2E00D62C5B /* CryptoTableCell.xib in Resources */,
 				29282E132ACECA2500D62C5B /* Assets.xcassets in Resources */,
 				29282E452ACECBF500D62C5B /* CryptoListViewController.xib in Resources */,
@@ -446,6 +493,7 @@
 				29282E4E2ACEF5B500D62C5B /* Stats.swift in Sources */,
 				29282E492ACEF2CD00D62C5B /* EndpointProtocol.swift in Sources */,
 				29282E812AD1648000D62C5B /* BaseViews.swift in Sources */,
+				29282E8F2AD19F8700D62C5B /* CryptoDetailViewController.swift in Sources */,
 				29282E0A2ACECA2400D62C5B /* AppDelegate.swift in Sources */,
 				29282E7C2AD1644200D62C5B /* CryptoListHeaderView.swift in Sources */,
 				29282E4C2ACEF45700D62C5B /* Coin.swift in Sources */,
@@ -457,7 +505,11 @@
 				29282E502ACEF5D300D62C5B /* CoinResponseModel.swift in Sources */,
 				29282E852AD1658B00D62C5B /* CryptoListViewModel.swift in Sources */,
 				29282E562ACEFA3800D62C5B /* Services.swift in Sources */,
+				29282E962AD1A71400D62C5B /* NavigationItem+Ext.swift in Sources */,
+				29282E9A2AD1A8F600D62C5B /* CryptoDetailHeaderView.swift in Sources */,
 				29282E642AD0AFA600D62C5B /* UITableView+Ext.swift in Sources */,
+				29282E922AD19F9B00D62C5B /* CryptoDetailViewModel.swift in Sources */,
+				29282E9E2AD1B08F00D62C5B /* NSMutableAttributedString+Ext.swift in Sources */,
 				29282E442ACECBF500D62C5B /* CryptoListViewController.swift in Sources */,
 				29282E5A2AD0AA2E00D62C5B /* CryptoTableCell.swift in Sources */,
 				29282E8B2AD1884900D62C5B /* CryptoSortType.swift in Sources */,

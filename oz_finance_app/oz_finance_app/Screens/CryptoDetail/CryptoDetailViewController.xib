@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CryptoDetailViewController" customModule="oz_finance_app" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="WIe-D0-dUA" id="8bN-Ra-ZUr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DnP-8P-SmG">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FfM-Ur-g8A">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="20"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIe-D0-dUA" customClass="CryptoDetailHeaderView" customModule="oz_finance_app" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="20"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" placeholder="YES" id="eL4-sy-s04"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="FfM-Ur-g8A" firstAttribute="leading" secondItem="DnP-8P-SmG" secondAttribute="leading" id="Y3E-Ox-5Zm"/>
+                        <constraint firstAttribute="trailing" secondItem="FfM-Ur-g8A" secondAttribute="trailing" id="bZq-QJ-qwY"/>
+                        <constraint firstItem="FfM-Ur-g8A" firstAttribute="top" secondItem="DnP-8P-SmG" secondAttribute="top" id="g8u-2b-Yl8"/>
+                        <constraint firstAttribute="bottom" secondItem="FfM-Ur-g8A" secondAttribute="bottom" id="xPL-z8-PzC"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="DnP-8P-SmG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="I13-HR-g4V"/>
+                <constraint firstAttribute="bottom" secondItem="DnP-8P-SmG" secondAttribute="bottom" id="MbG-W6-NRp"/>
+                <constraint firstItem="FfM-Ur-g8A" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="Ykf-dx-Jmj"/>
+                <constraint firstItem="DnP-8P-SmG" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="e2W-eb-akV"/>
+                <constraint firstItem="DnP-8P-SmG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="s1A-gq-98A"/>
+            </constraints>
+            <point key="canvasLocation" x="-5.343511450381679" y="19.718309859154932"/>
+        </view>
+    </objects>
+</document>

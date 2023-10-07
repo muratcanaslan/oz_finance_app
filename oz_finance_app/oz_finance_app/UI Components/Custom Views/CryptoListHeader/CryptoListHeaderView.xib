@@ -28,12 +28,13 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkx-Ty-nPf">
-                            <rect key="frame" x="507.66666666666657" y="6" width="101.33333333333331" height="36"/>
-                            <color key="backgroundColor" red="0.87450980392156863" green="0.80000000000000004" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <rect key="frame" x="502.66666666666657" y="6" width="106.33333333333331" height="36"/>
+                            <color key="backgroundColor" red="0.87450980392156863" green="0.80000000000000004" blue="0.98431372549019602" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="36" id="9gC-nd-HAY"/>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="j5c-qT-9YN"/>
                             </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                             <color key="tintColor" systemColor="labelColor"/>
                             <inset key="contentEdgeInsets" minX="12" minY="8" maxX="12" maxY="8"/>
                             <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
