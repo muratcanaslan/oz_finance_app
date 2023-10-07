@@ -19,15 +19,17 @@ protocol ChartListViewModelInterface: AnyObject {
 
 final class ChartListViewModel {
     
+    //MARK: - Properties
     weak var view: ChartListInterface?
-    
     var cellVMs: [ChartTableCellViewModel]
     
+    //MARK: - Init
     init(model: [ChartTableCellViewModel]) {
         self.cellVMs = model
     }
 }
 
+//MARK: - ChartListViewModelInterface
 extension ChartListViewModel: ChartListViewModelInterface {
     func numberOfRowsInSection() -> Int {
         return cellVMs.count

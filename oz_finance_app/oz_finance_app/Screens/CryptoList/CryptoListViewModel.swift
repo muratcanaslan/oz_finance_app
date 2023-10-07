@@ -31,11 +31,13 @@ protocol CrypyoListViewModelInterface: AnyObject {
 
 final class CryptoListViewModel {
 
+    //MARK: - Properties
     weak var view: CryptoListInterface?
     var selectedSortType: CryptoSortType = .default
     var cellVMs = [CryptoTableCellViewModel]()
     var sortedCellVMs = [CryptoTableCellViewModel]()
     
+    //MARK: - Helpers
     func filterVMs() {
         switch selectedSortType {
         case .default:

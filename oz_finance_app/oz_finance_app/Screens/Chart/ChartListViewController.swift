@@ -8,7 +8,6 @@
 import UIKit
 
 protocol ChartListInterface: AnyObject {
-    
     func prepareTableView()
     func reloadData()
 }

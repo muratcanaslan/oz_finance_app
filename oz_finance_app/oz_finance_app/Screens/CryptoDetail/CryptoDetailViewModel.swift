@@ -18,14 +18,17 @@ protocol CrypyoDetailViewModelInterface: AnyObject {
 
 final class CryptoDetailViewModel {
     
+    //MARK: - Properties
     weak var view: CryptoDetailInterface?
     let cellVM: CryptoTableCellViewModel
     
+    //MARK: - Init
     init(cellVM: CryptoTableCellViewModel) {
         self.cellVM = cellVM
     }
 }
 
+//MARK: - CrypyoDetailViewModelInterface
 extension CryptoDetailViewModel: CrypyoDetailViewModelInterface {
     
     func viewDidLoad() {

@@ -335,8 +335,8 @@
 		29282E972AD1A8D500D62C5B /* CryptoListHeader */ = {
 			isa = PBXGroup;
 			children = (
-				29282E792AD1642E00D62C5B /* CryptoListHeaderView.xib */,
 				29282E7B2AD1644200D62C5B /* CryptoListHeaderView.swift */,
+				29282E792AD1642E00D62C5B /* CryptoListHeaderView.xib */,
 			);
 			path = CryptoListHeader;
 			sourceTree = "<group>";

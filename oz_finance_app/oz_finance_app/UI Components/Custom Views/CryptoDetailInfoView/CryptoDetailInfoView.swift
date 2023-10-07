@@ -31,6 +31,7 @@ final class CryptoDetailInfoView: BaseView {
         self.btcPriceLabel.text = "BTC Price: " + model.formattedValue(with: model.btcPrice)
     }
     
+    //MARK: - IBActions
     @IBAction private func didTapWebsite(_ sender: UIButton) {
         self.delegate?.didTapWebsite()
     }

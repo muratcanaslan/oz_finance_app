@@ -29,6 +29,7 @@ final class CryptoListHeaderView: BaseView {
         self.delegate?.didTapSort()
     }
     
+    //MARK: - UI Helpers
     func updateSortTitle(with title: String) {
         self.sortButton.setTitle(title, for: .normal)
     }

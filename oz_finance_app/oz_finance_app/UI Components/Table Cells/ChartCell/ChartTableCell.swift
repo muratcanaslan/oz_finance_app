@@ -8,9 +8,12 @@
 import UIKit
 
 final class ChartTableCell: BaseTableViewCell {
+    
+    //MARK: - IBOutlets
     @IBOutlet private weak var rankLabel: UILabel!
     @IBOutlet private weak var valueLabel: UILabel!
     
+    //MARK: - Configure
     func configure(with model: ChartTableCellViewModel) {
         self.rankLabel.text = model.rank
         self.valueLabel.text = model.value

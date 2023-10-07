@@ -16,11 +16,14 @@ protocol CryptoDetailInterface: AnyObject {
 
 final class CryptoDetailViewController: UIViewController {
 
+    //MARK: - IBOutlets
     @IBOutlet private weak var infoView: CryptoDetailInfoView!
     @IBOutlet private weak var headerView: CryptoDetailHeaderView!
     
+    //MARK: - Properties
     private let viewModel: CryptoDetailViewModel
     
+    //MARK: - Inits
     init(viewModel: CryptoDetailViewModel) {
         self.viewModel = viewModel
         super.init(nibName: "CryptoDetailViewController", bundle: nil)
@@ -30,6 +33,7 @@ final class CryptoDetailViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
