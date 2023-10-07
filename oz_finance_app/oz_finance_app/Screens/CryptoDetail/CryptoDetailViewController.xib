@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CryptoDetailViewController" customModule="oz_finance_app" customModuleProvider="target">
             <connections>
                 <outlet property="headerView" destination="WIe-D0-dUA" id="8bN-Ra-ZUr"/>
+                <outlet property="infoView" destination="v2j-FB-HJZ" id="qE7-qu-FQy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,13 +24,20 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FfM-Ur-g8A">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="20"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIe-D0-dUA" customClass="CryptoDetailHeaderView" customModule="oz_finance_app" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="20"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20" placeholder="YES" id="eL4-sy-s04"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2j-FB-HJZ" customClass="CryptoDetailInfoView" customModule="oz_finance_app" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="20" width="393" height="20"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" placeholder="YES" id="KY6-ug-rrL"/>
                                     </constraints>
                                 </view>
                             </subviews>

@@ -10,11 +10,14 @@ import UIKit
 protocol CryptoDetailInterface: AnyObject {
     func setNavigationTitle(with title: String, with subtitle: String)
     func setupHeaderView()
+    func setupInfoView()
 }
 
 final class CryptoDetailViewController: UIViewController {
 
+    @IBOutlet private weak var infoView: CryptoDetailInfoView!
     @IBOutlet private weak var headerView: CryptoDetailHeaderView!
+    
     private let viewModel: CryptoDetailViewModel
     
     init(viewModel: CryptoDetailViewModel) {
@@ -30,6 +33,7 @@ final class CryptoDetailViewController: UIViewController {
         super.viewDidLoad()
 
         viewModel.view = self
+        infoView.delegate = self
         viewModel.viewDidLoad()
         
     }
@@ -44,6 +48,20 @@ extension CryptoDetailViewController: CryptoDetailInterface {
     func setupHeaderView() {
         headerView.configure(with: viewModel.cellVM)
     }
+    
+    func setupInfoView() {
+        infoView.configure(with: viewModel.cellVM)
+    }
 }
 
 
+//MARK: - CrpytoDetailInfoViewDelegate
+extension CryptoDetailViewController: CryptoDetailInfoViewDelegate {
+    func didTapWebsite() {
+        //TODO: - Website
+    }
+    
+    func didTapShowChart() {
+        //TODO: - Chart
+    }
+}

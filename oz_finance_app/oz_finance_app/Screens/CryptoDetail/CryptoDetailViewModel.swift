@@ -13,6 +13,7 @@ protocol CrypyoDetailViewModelInterface: AnyObject {
     var cellVM: CryptoTableCellViewModel { get }
     
     func viewDidLoad()
+    
 }
 
 final class CryptoDetailViewModel {
@@ -30,5 +31,6 @@ extension CryptoDetailViewModel: CrypyoDetailViewModelInterface {
     func viewDidLoad() {
         view?.setNavigationTitle(with: cellVM.shortName, with: cellVM.longName)
         view?.setupHeaderView()
+        view?.setupInfoView()
     }
 }

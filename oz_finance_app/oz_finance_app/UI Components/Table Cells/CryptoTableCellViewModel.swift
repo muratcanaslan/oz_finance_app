@@ -22,6 +22,7 @@ struct CryptoTableCellViewModel {
         self.sortableListedAt = model.listedAt ?? 0.0
         self.sortablePrice = Double(model.price ?? "0") ?? 0.0
         self.sortableChange = Double(model.change ?? "0") ?? 0.0
+        self.btcPrice = model.btcPrice
     }
     
     //MARK: - Filtered Related Properties
@@ -38,6 +39,7 @@ struct CryptoTableCellViewModel {
     var longName: String
     var changeValue: String?
     var sparklines: [String]?
+    var btcPrice: String?
     
     var doubleValue: Double? {
         return Double(value)
@@ -95,8 +97,8 @@ struct CryptoTableCellViewModel {
         }
     }
     
-    func formattedValue(with value: String) -> String {
-        guard let doubleValue = Double(value) else { return "-"}
+    func formattedValue(with value: String?) -> String {
+        guard let doubleValue = Double(value ?? "-") else { return "-"}
         let formatter = NumberFormatter()
         formatter.minimumIntegerDigits = 1
         formatter.minimumFractionDigits = 2
