@@ -173,7 +173,6 @@
 				29282E732AD0C7DC00D62C5B /* Helpers */,
 				29282E3F2ACECA7200D62C5B /* App */,
 				29282E3E2ACECA6800D62C5B /* Extensions */,
-				29282E3D2ACECA6400D62C5B /* Managers */,
 				29282E3C2ACECA5D00D62C5B /* Resources */,
 				29282E3B2ACECA5700D62C5B /* Core */,
 				29282E3A2ACECA5300D62C5B /* UI Components */,
@@ -237,13 +236,6 @@
 				29282E122ACECA2500D62C5B /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		29282E3D2ACECA6400D62C5B /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 		29282E3E2ACECA6800D62C5B /* Extensions */ = {
