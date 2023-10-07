@@ -105,7 +105,7 @@ extension CryptoListViewModel: CrypyoListViewModelInterface {
     }
     
     func didSelectItemAt(indexPath: IndexPath) {
-        view?.routeDetail(with: cellVMs[indexPath.row])
+        view?.routeDetail(with: sortedCellVMs[indexPath.row])
     }
     
 }
