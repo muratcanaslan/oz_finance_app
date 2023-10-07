@@ -30,6 +30,13 @@
 		29282E722AD0C68E00D62C5B /* SDWebImageSVGCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 29282E712AD0C68E00D62C5B /* SDWebImageSVGCoder */; };
 		29282E752AD0C7F500D62C5B /* ImageSVGDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E742AD0C7F500D62C5B /* ImageSVGDecoder.swift */; };
 		29282E772AD0D1F700D62C5B /* CryptoTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E762AD0D1F700D62C5B /* CryptoTableCellViewModel.swift */; };
+		29282E7A2AD1642E00D62C5B /* CryptoListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29282E792AD1642E00D62C5B /* CryptoListHeaderView.xib */; };
+		29282E7C2AD1644200D62C5B /* CryptoListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E7B2AD1644200D62C5B /* CryptoListHeaderView.swift */; };
+		29282E7F2AD1646E00D62C5B /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = 29282E7E2AD1646E00D62C5B /* Reusable */; };
+		29282E812AD1648000D62C5B /* BaseViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E802AD1648000D62C5B /* BaseViews.swift */; };
+		29282E852AD1658B00D62C5B /* CryptoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E842AD1658B00D62C5B /* CryptoListViewModel.swift */; };
+		29282E892AD17EDA00D62C5B /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E882AD17EDA00D62C5B /* UIViewController+Ext.swift */; };
+		29282E8B2AD1884900D62C5B /* CryptoSortType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E8A2AD1884900D62C5B /* CryptoSortType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +82,12 @@
 		29282E632AD0AFA600D62C5B /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		29282E742AD0C7F500D62C5B /* ImageSVGDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSVGDecoder.swift; sourceTree = "<group>"; };
 		29282E762AD0D1F700D62C5B /* CryptoTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableCellViewModel.swift; sourceTree = "<group>"; };
+		29282E792AD1642E00D62C5B /* CryptoListHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoListHeaderView.xib; sourceTree = "<group>"; };
+		29282E7B2AD1644200D62C5B /* CryptoListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListHeaderView.swift; sourceTree = "<group>"; };
+		29282E802AD1648000D62C5B /* BaseViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViews.swift; sourceTree = "<group>"; };
+		29282E842AD1658B00D62C5B /* CryptoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewModel.swift; sourceTree = "<group>"; };
+		29282E882AD17EDA00D62C5B /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		29282E8A2AD1884900D62C5B /* CryptoSortType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoSortType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +97,7 @@
 			files = (
 				29282E6F2AD0C4C900D62C5B /* SDWebImage in Frameworks */,
 				29282E722AD0C68E00D62C5B /* SDWebImageSVGCoder in Frameworks */,
+				29282E7F2AD1646E00D62C5B /* Reusable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +183,8 @@
 		29282E3A2ACECA5300D62C5B /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
+				29282E802AD1648000D62C5B /* BaseViews.swift */,
+				29282E782AD1641900D62C5B /* Custom Views */,
 				29282E572AD0AA1200D62C5B /* Table Cells */,
 			);
 			path = "UI Components";
@@ -205,6 +221,7 @@
 			children = (
 				29282E5F2AD0ACC400D62C5B /* UIImageView+Ext.swift */,
 				29282E632AD0AFA600D62C5B /* UITableView+Ext.swift */,
+				29282E882AD17EDA00D62C5B /* UIViewController+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -230,6 +247,8 @@
 			children = (
 				29282E422ACECBF500D62C5B /* CryptoListViewController.swift */,
 				29282E432ACECBF500D62C5B /* CryptoListViewController.xib */,
+				29282E842AD1658B00D62C5B /* CryptoListViewModel.swift */,
+				29282E8A2AD1884900D62C5B /* CryptoSortType.swift */,
 			);
 			path = CryptoList;
 			sourceTree = "<group>";
@@ -271,6 +290,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		29282E782AD1641900D62C5B /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				29282E792AD1642E00D62C5B /* CryptoListHeaderView.xib */,
+				29282E7B2AD1644200D62C5B /* CryptoListHeaderView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -290,6 +318,7 @@
 			packageProductDependencies = (
 				29282E6E2AD0C4C900D62C5B /* SDWebImage */,
 				29282E712AD0C68E00D62C5B /* SDWebImageSVGCoder */,
+				29282E7E2AD1646E00D62C5B /* Reusable */,
 			);
 			productName = oz_finance_app;
 			productReference = 29282E062ACECA2400D62C5B /* oz_finance_app.app */;
@@ -366,6 +395,7 @@
 			packageReferences = (
 				29282E6D2AD0C4C900D62C5B /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				29282E702AD0C68E00D62C5B /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */,
+				29282E7D2AD1646E00D62C5B /* XCRemoteSwiftPackageReference "Reusable" */,
 			);
 			productRefGroup = 29282E072ACECA2400D62C5B /* Products */;
 			projectDirPath = "";
@@ -383,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29282E7A2AD1642E00D62C5B /* CryptoListHeaderView.xib in Resources */,
 				29282E162ACECA2500D62C5B /* LaunchScreen.storyboard in Resources */,
 				29282E5B2AD0AA2E00D62C5B /* CryptoTableCell.xib in Resources */,
 				29282E132ACECA2500D62C5B /* Assets.xcassets in Resources */,
@@ -414,17 +445,22 @@
 				29282E602AD0ACC400D62C5B /* UIImageView+Ext.swift in Sources */,
 				29282E4E2ACEF5B500D62C5B /* Stats.swift in Sources */,
 				29282E492ACEF2CD00D62C5B /* EndpointProtocol.swift in Sources */,
+				29282E812AD1648000D62C5B /* BaseViews.swift in Sources */,
 				29282E0A2ACECA2400D62C5B /* AppDelegate.swift in Sources */,
+				29282E7C2AD1644200D62C5B /* CryptoListHeaderView.swift in Sources */,
 				29282E4C2ACEF45700D62C5B /* Coin.swift in Sources */,
 				29282E752AD0C7F500D62C5B /* ImageSVGDecoder.swift in Sources */,
+				29282E892AD17EDA00D62C5B /* UIViewController+Ext.swift in Sources */,
 				29282E772AD0D1F700D62C5B /* CryptoTableCellViewModel.swift in Sources */,
 				29282E542ACEF7AC00D62C5B /* ServiceManager.swift in Sources */,
 				29282E472ACEF00200D62C5B /* Endpoint.swift in Sources */,
 				29282E502ACEF5D300D62C5B /* CoinResponseModel.swift in Sources */,
+				29282E852AD1658B00D62C5B /* CryptoListViewModel.swift in Sources */,
 				29282E562ACEFA3800D62C5B /* Services.swift in Sources */,
 				29282E642AD0AFA600D62C5B /* UITableView+Ext.swift in Sources */,
 				29282E442ACECBF500D62C5B /* CryptoListViewController.swift in Sources */,
 				29282E5A2AD0AA2E00D62C5B /* CryptoTableCell.swift in Sources */,
+				29282E8B2AD1884900D62C5B /* CryptoSortType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,6 +812,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		29282E7D2AD1646E00D62C5B /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -788,6 +832,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 29282E702AD0C68E00D62C5B /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */;
 			productName = SDWebImageSVGCoder;
+		};
+		29282E7E2AD1646E00D62C5B /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29282E7D2AD1646E00D62C5B /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

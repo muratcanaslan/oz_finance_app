@@ -21,9 +21,11 @@ struct Coin: Codable {
     let coinrankingUrl: URL?
     let volume24h: String?
     let btcPrice: String?
+    let sparkline: [String]?
+    var listedAt: Double?
     
     enum CodingKeys: String, CodingKey {
-        case uuid, symbol, name, color, iconUrl, marketCap, price, change, rank, lowVolume,coinrankingUrl, btcPrice
+        case uuid, symbol, name, color, iconUrl, marketCap, price, change, rank, lowVolume,coinrankingUrl, btcPrice, sparkline, listedAt
         case volume24h = "24hVolume"
     }
 }
