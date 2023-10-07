@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="139" id="KGk-i7-Jjw" customClass="ChartTableCell" customModule="oz_finance_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJw-uq-iGA">
+                        <rect key="frame" x="0.0" y="0.0" width="364" height="139"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ufn-lB-skb">
+                                <rect key="frame" x="24" y="8" width="316" height="123"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="20." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbj-yg-Mpd">
+                                        <rect key="frame" x="0.0" y="51.333333333333336" width="24.333333333333332" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55A-cj-7dw">
+                                        <rect key="frame" x="274.66666666666669" y="51.333333333333336" width="41.333333333333314" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ufn-lB-skb" secondAttribute="trailing" constant="24" id="FG1-BQ-h0g"/>
+                            <constraint firstItem="ufn-lB-skb" firstAttribute="top" secondItem="tJw-uq-iGA" secondAttribute="top" constant="8" id="MBk-lV-sZt"/>
+                            <constraint firstItem="ufn-lB-skb" firstAttribute="leading" secondItem="tJw-uq-iGA" secondAttribute="leading" constant="24" id="PpA-YH-nqt"/>
+                            <constraint firstAttribute="bottom" secondItem="ufn-lB-skb" secondAttribute="bottom" constant="8" id="gjT-Ss-tgG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tJw-uq-iGA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4xh-Nh-UXn"/>
+                    <constraint firstItem="tJw-uq-iGA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ifB-Kd-jvg"/>
+                    <constraint firstAttribute="bottom" secondItem="tJw-uq-iGA" secondAttribute="bottom" id="qmS-fa-U5D"/>
+                    <constraint firstAttribute="trailing" secondItem="tJw-uq-iGA" secondAttribute="trailing" id="v87-ZM-zf0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="rankLabel" destination="Lbj-yg-Mpd" id="kb6-Zz-cqL"/>
+                <outlet property="valueLabel" destination="55A-cj-7dw" id="bkg-Tm-Rcf"/>
+            </connections>
+            <point key="canvasLocation" x="-68.702290076335871" y="53.169014084507047"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -25,7 +25,6 @@
 		29282E5A2AD0AA2E00D62C5B /* CryptoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E582AD0AA2E00D62C5B /* CryptoTableCell.swift */; };
 		29282E5B2AD0AA2E00D62C5B /* CryptoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29282E592AD0AA2E00D62C5B /* CryptoTableCell.xib */; };
 		29282E602AD0ACC400D62C5B /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E5F2AD0ACC400D62C5B /* UIImageView+Ext.swift */; };
-		29282E642AD0AFA600D62C5B /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E632AD0AFA600D62C5B /* UITableView+Ext.swift */; };
 		29282E6F2AD0C4C900D62C5B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 29282E6E2AD0C4C900D62C5B /* SDWebImage */; };
 		29282E722AD0C68E00D62C5B /* SDWebImageSVGCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 29282E712AD0C68E00D62C5B /* SDWebImageSVGCoder */; };
 		29282E752AD0C7F500D62C5B /* ImageSVGDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E742AD0C7F500D62C5B /* ImageSVGDecoder.swift */; };
@@ -46,6 +45,12 @@
 		29282E9E2AD1B08F00D62C5B /* NSMutableAttributedString+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282E9D2AD1B08F00D62C5B /* NSMutableAttributedString+Ext.swift */; };
 		29282EA12AD1B4D400D62C5B /* CryptoDetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282EA02AD1B4D400D62C5B /* CryptoDetailInfoView.swift */; };
 		29282EA32AD1B4DB00D62C5B /* CryptoDetailInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29282EA22AD1B4DB00D62C5B /* CryptoDetailInfoView.xib */; };
+		29282EAB2AD1DEF700D62C5B /* ChartTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282EA92AD1DEF700D62C5B /* ChartTableCell.swift */; };
+		29282EAC2AD1DEF700D62C5B /* ChartTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29282EAA2AD1DEF700D62C5B /* ChartTableCell.xib */; };
+		29282EAF2AD1E18A00D62C5B /* ChartListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282EAD2AD1E18A00D62C5B /* ChartListViewController.swift */; };
+		29282EB02AD1E18A00D62C5B /* ChartListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29282EAE2AD1E18A00D62C5B /* ChartListViewController.xib */; };
+		29282EB22AD1E2F100D62C5B /* ChartListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282EB12AD1E2F100D62C5B /* ChartListViewModel.swift */; };
+		29282EB42AD1E71E00D62C5B /* ChartTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29282EB32AD1E71E00D62C5B /* ChartTableCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +93,6 @@
 		29282E582AD0AA2E00D62C5B /* CryptoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableCell.swift; sourceTree = "<group>"; };
 		29282E592AD0AA2E00D62C5B /* CryptoTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoTableCell.xib; sourceTree = "<group>"; };
 		29282E5F2AD0ACC400D62C5B /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
-		29282E632AD0AFA600D62C5B /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		29282E742AD0C7F500D62C5B /* ImageSVGDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSVGDecoder.swift; sourceTree = "<group>"; };
 		29282E762AD0D1F700D62C5B /* CryptoTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableCellViewModel.swift; sourceTree = "<group>"; };
 		29282E792AD1642E00D62C5B /* CryptoListHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoListHeaderView.xib; sourceTree = "<group>"; };
@@ -106,6 +110,12 @@
 		29282E9D2AD1B08F00D62C5B /* NSMutableAttributedString+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Ext.swift"; sourceTree = "<group>"; };
 		29282EA02AD1B4D400D62C5B /* CryptoDetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailInfoView.swift; sourceTree = "<group>"; };
 		29282EA22AD1B4DB00D62C5B /* CryptoDetailInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoDetailInfoView.xib; sourceTree = "<group>"; };
+		29282EA92AD1DEF700D62C5B /* ChartTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTableCell.swift; sourceTree = "<group>"; };
+		29282EAA2AD1DEF700D62C5B /* ChartTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartTableCell.xib; sourceTree = "<group>"; };
+		29282EAD2AD1E18A00D62C5B /* ChartListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartListViewController.swift; sourceTree = "<group>"; };
+		29282EAE2AD1E18A00D62C5B /* ChartListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartListViewController.xib; sourceTree = "<group>"; };
+		29282EB12AD1E2F100D62C5B /* ChartListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartListViewModel.swift; sourceTree = "<group>"; };
+		29282EB32AD1E71E00D62C5B /* ChartTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTableCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +202,7 @@
 		29282E392ACECA4E00D62C5B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				29282EA42AD1DE0A00D62C5B /* Chart */,
 				29282E8C2AD19F7200D62C5B /* CryptoDetail */,
 				29282E412ACECBD200D62C5B /* CryptoList */,
 				29282E402ACECA9200D62C5B /* Launch */,
@@ -239,7 +250,6 @@
 			isa = PBXGroup;
 			children = (
 				29282E5F2AD0ACC400D62C5B /* UIImageView+Ext.swift */,
-				29282E632AD0AFA600D62C5B /* UITableView+Ext.swift */,
 				29282E882AD17EDA00D62C5B /* UIViewController+Ext.swift */,
 				29282E952AD1A71400D62C5B /* NavigationItem+Ext.swift */,
 				29282E9D2AD1B08F00D62C5B /* NSMutableAttributedString+Ext.swift */,
@@ -296,9 +306,8 @@
 		29282E572AD0AA1200D62C5B /* Table Cells */ = {
 			isa = PBXGroup;
 			children = (
-				29282E582AD0AA2E00D62C5B /* CryptoTableCell.swift */,
-				29282E592AD0AA2E00D62C5B /* CryptoTableCell.xib */,
-				29282E762AD0D1F700D62C5B /* CryptoTableCellViewModel.swift */,
+				29282EA82AD1DEE300D62C5B /* ChartCell */,
+				29282EA72AD1DE2700D62C5B /* CryptoTableCell */,
 			);
 			path = "Table Cells";
 			sourceTree = "<group>";
@@ -356,6 +365,36 @@
 				29282EA22AD1B4DB00D62C5B /* CryptoDetailInfoView.xib */,
 			);
 			path = CryptoDetailInfoView;
+			sourceTree = "<group>";
+		};
+		29282EA42AD1DE0A00D62C5B /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				29282EAD2AD1E18A00D62C5B /* ChartListViewController.swift */,
+				29282EAE2AD1E18A00D62C5B /* ChartListViewController.xib */,
+				29282EB12AD1E2F100D62C5B /* ChartListViewModel.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		29282EA72AD1DE2700D62C5B /* CryptoTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				29282E582AD0AA2E00D62C5B /* CryptoTableCell.swift */,
+				29282E592AD0AA2E00D62C5B /* CryptoTableCell.xib */,
+				29282E762AD0D1F700D62C5B /* CryptoTableCellViewModel.swift */,
+			);
+			path = CryptoTableCell;
+			sourceTree = "<group>";
+		};
+		29282EA82AD1DEE300D62C5B /* ChartCell */ = {
+			isa = PBXGroup;
+			children = (
+				29282EA92AD1DEF700D62C5B /* ChartTableCell.swift */,
+				29282EAA2AD1DEF700D62C5B /* ChartTableCell.xib */,
+				29282EB32AD1E71E00D62C5B /* ChartTableCellViewModel.swift */,
+			);
+			path = ChartCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29282E902AD19F8700D62C5B /* CryptoDetailViewController.xib in Resources */,
+				29282EB02AD1E18A00D62C5B /* ChartListViewController.xib in Resources */,
 				29282E7A2AD1642E00D62C5B /* CryptoListHeaderView.xib in Resources */,
 				29282E162ACECA2500D62C5B /* LaunchScreen.storyboard in Resources */,
 				29282E9C2AD1A8FB00D62C5B /* CryptoDetailHeaderView.xib in Resources */,
@@ -480,6 +520,7 @@
 				29282E5B2AD0AA2E00D62C5B /* CryptoTableCell.xib in Resources */,
 				29282E132ACECA2500D62C5B /* Assets.xcassets in Resources */,
 				29282E452ACECBF500D62C5B /* CryptoListViewController.xib in Resources */,
+				29282EAC2AD1DEF700D62C5B /* ChartTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,8 +548,11 @@
 				29282E602AD0ACC400D62C5B /* UIImageView+Ext.swift in Sources */,
 				29282E4E2ACEF5B500D62C5B /* Stats.swift in Sources */,
 				29282E492ACEF2CD00D62C5B /* EndpointProtocol.swift in Sources */,
+				29282EAF2AD1E18A00D62C5B /* ChartListViewController.swift in Sources */,
 				29282E812AD1648000D62C5B /* BaseViews.swift in Sources */,
 				29282E8F2AD19F8700D62C5B /* CryptoDetailViewController.swift in Sources */,
+				29282EB22AD1E2F100D62C5B /* ChartListViewModel.swift in Sources */,
+				29282EAB2AD1DEF700D62C5B /* ChartTableCell.swift in Sources */,
 				29282EA12AD1B4D400D62C5B /* CryptoDetailInfoView.swift in Sources */,
 				29282E0A2ACECA2400D62C5B /* AppDelegate.swift in Sources */,
 				29282E7C2AD1644200D62C5B /* CryptoListHeaderView.swift in Sources */,
@@ -523,11 +567,11 @@
 				29282E562ACEFA3800D62C5B /* Services.swift in Sources */,
 				29282E962AD1A71400D62C5B /* NavigationItem+Ext.swift in Sources */,
 				29282E9A2AD1A8F600D62C5B /* CryptoDetailHeaderView.swift in Sources */,
-				29282E642AD0AFA600D62C5B /* UITableView+Ext.swift in Sources */,
 				29282E922AD19F9B00D62C5B /* CryptoDetailViewModel.swift in Sources */,
 				29282E9E2AD1B08F00D62C5B /* NSMutableAttributedString+Ext.swift in Sources */,
 				29282E442ACECBF500D62C5B /* CryptoListViewController.swift in Sources */,
 				29282E5A2AD0AA2E00D62C5B /* CryptoTableCell.swift in Sources */,
+				29282EB42AD1E71E00D62C5B /* ChartTableCellViewModel.swift in Sources */,
 				29282E8B2AD1884900D62C5B /* CryptoSortType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

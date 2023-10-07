@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 protocol CryptoDetailInterface: AnyObject {
     func setNavigationTitle(with title: String, with subtitle: String)
@@ -58,10 +59,21 @@ extension CryptoDetailViewController: CryptoDetailInterface {
 //MARK: - CrpytoDetailInfoViewDelegate
 extension CryptoDetailViewController: CryptoDetailInfoViewDelegate {
     func didTapWebsite() {
-        //TODO: - Website
+        guard let url = viewModel.cellVM.url else {
+            self.showNativeAlert(haveActionButton: false, message: "Could not found market url.")
+            return
+        }
+        
+        let vc = SFSafariViewController(url: url)
+        vc.modalPresentationStyle = .popover
+        vc.modalTransitionStyle = .coverVertical
+        self.present(vc, animated: true)
     }
     
     func didTapShowChart() {
-        //TODO: - Chart
+        let vc = ChartListViewController(viewModel: .init(model: viewModel.cellVM.createChartViewModels()))
+        vc.modalTransitionStyle = .coverVertical
+        vc.modalPresentationStyle = .popover
+        self.present(vc, animated: true)
     }
 }

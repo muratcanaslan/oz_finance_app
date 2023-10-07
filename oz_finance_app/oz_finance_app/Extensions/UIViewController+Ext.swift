@@ -9,10 +9,12 @@ import UIKit
 
 extension UIViewController {
     
-    func showEmptyAlert(message: String, actionHandler: ((UIAlertAction) -> Void)?) {
+    func showNativeAlert(haveActionButton: Bool = true, message: String, actionHandler: ((UIAlertAction) -> Void)? = nil) {
         let alert = UIAlertController(title: "Error!", message: message, preferredStyle: .alert)
         alert.addAction(.init(title: "Cancel", style: .cancel))
-        alert.addAction(.init(title: "Retry", style: .default, handler: actionHandler))
+        if haveActionButton {
+            alert.addAction(.init(title: "Retry", style: .default, handler: actionHandler))
+        }
         self.present(alert, animated: true)
     }
 }

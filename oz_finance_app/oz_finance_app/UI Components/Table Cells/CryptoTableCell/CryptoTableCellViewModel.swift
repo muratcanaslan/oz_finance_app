@@ -23,6 +23,7 @@ struct CryptoTableCellViewModel {
         self.sortablePrice = Double(model.price ?? "0") ?? 0.0
         self.sortableChange = Double(model.change ?? "0") ?? 0.0
         self.btcPrice = model.btcPrice
+        self.url = model.coinrankingUrl
     }
     
     //MARK: - Filtered Related Properties
@@ -40,18 +41,25 @@ struct CryptoTableCellViewModel {
     var changeValue: String?
     var sparklines: [String]?
     var btcPrice: String?
+    var url: URL?
+    
+    var formattedSparklines: [String] {
+        guard let sparklines else { return [] }
+        let arr: [String] = sparklines.compactMap({ formattedValue(with: $0 )})
+        return arr
+    }
     
     var doubleValue: Double? {
         return Double(value)
     }
     
     var highValue: String {
-        var doubleSparks: [Double] = (sparklines?.compactMap({ Double($0) }))!
+        let doubleSparks: [Double] = (sparklines?.compactMap({ Double($0) }))!
         return formattedValue(with: doubleSparks.max())
     }
     
     var lowValue: String {
-        var doubleSparks: [Double] = (sparklines?.compactMap({ Double($0) }))!
+        let doubleSparks: [Double] = (sparklines?.compactMap({ Double($0) }))!
         return formattedValue(with: doubleSparks.min())
     }
     var isLow: Bool? {
@@ -131,5 +139,13 @@ struct CryptoTableCellViewModel {
         } else {
             return "-"
         }
+    }
+    
+    func createChartViewModels() -> [ChartTableCellViewModel] {
+        var cellVMs = [ChartTableCellViewModel]()
+        for (index, value) in formattedSparklines.reversed().enumerated() {
+            cellVMs.append(.init(rank: "\(index + 1).", value: value))
+        }
+        return cellVMs
     }
 }

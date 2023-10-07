@@ -82,7 +82,7 @@ extension CryptoListViewController: CryptoListInterface {
     }
     
     func showAlert(with message: String) {
-        self.showEmptyAlert(message: message, actionHandler: { [weak self] _ in
+        self.showNativeAlert(message: message, actionHandler: { [weak self] _ in
             self?.viewModel.fetchList()
         })
     }
